@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Pane>
+         <children>
+            <Button fx:id="btnFechar" cancelButton="true" layoutX="146.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnFecharAction" prefHeight="40.0" prefWidth="80.0" text="Fechar" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNovaCategoria" layoutX="280.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnNovaCategoriaAction" prefHeight="51.0" prefWidth="73.0" text="Nova Categoria" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSalvar" defaultButton="true" layoutX="34.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnSalvarAction" prefHeight="40.0" prefWidth="80.0" text="Salvar" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNovaMarca" layoutX="377.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnNovaMarcaAction" prefHeight="52.0" prefWidth="72.0" text="Nova Marca" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLimpar" layoutX="601.0" layoutY="18.0" mnemonicParsing="false" onAction="#btnLimparAction" text="Limpar">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Separator layoutY="60.0" prefHeight="6.0" prefWidth="682.0" />
+            <Separator layoutX="264.0" orientation="VERTICAL" prefHeight="60.0" prefWidth="0.0" />
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="368.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="488.0" layoutY="6.0" />
+            <Button fx:id="btnEscolherImagem" layoutX="522.0" layoutY="190.0" mnemonicParsing="false" text="Escolher" />
+            <Separator layoutX="424.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="226.0" prefWidth="4.0" />
+            <TextField fx:id="txtDescricao" layoutX="39.0" layoutY="68.0" prefHeight="25.0" prefWidth="285.0" promptText="Produto" />
+            <Label layoutX="39.0" layoutY="51.0" text="Descrição" />
+            <TextField fx:id="txtCodigo" editable="false" layoutX="39.0" layoutY="21.0" prefHeight="25.0" prefWidth="59.0" />
+            <Label layoutX="39.0" layoutY="5.0" text="Código" />
+            <TextField fx:id="txtUnidadeMedida" layoutX="39.0" layoutY="118.0" prefHeight="25.0" prefWidth="133.0" promptText="UN" />
+            <Label layoutX="39.0" layoutY="101.0" text="Unidade Medida" />
+            <TextField fx:id="txtEstoqueAtual" layoutX="255.0" layoutY="169.0" prefHeight="25.0" prefWidth="82.0" promptText="Nº" />
+            <Label layoutX="255.0" layoutY="151.0" text="Estq. Atual" />
+            <ComboBox fx:id="cmbFornecedor" layoutX="39.0" layoutY="168.0" prefHeight="25.0" prefWidth="170.0" promptText="Selecione o fornecedor" />
+            <Label layoutX="39.0" layoutY="151.0" text="Fornecedor" />
+            <TextField fx:id="txtEstoqueMinimo" layoutX="39.0" layoutY="219.0" prefHeight="25.0" prefWidth="72.0" promptText="Nº" />
+            <TextField fx:id="txtEstoqueMaximo" layoutX="172.0" layoutY="219.0" prefHeight="25.0" prefWidth="83.0" promptText="Nº" />
+            <Label layoutX="39.0" layoutY="202.0" text="Estq. Minimo" />
+            <Label layoutX="172.0" layoutY="202.0" text="Estq. Maximo" />
+            <TextField fx:id="txtObservacoes" layoutX="39.0" layoutY="321.0" prefHeight="25.0" prefWidth="367.0" promptText="Observações" />
+            <ComboBox fx:id="cmbCategorias" layoutX="39.0" layoutY="270.0" prefHeight="25.0" prefWidth="158.0" promptText="Selecione a categoria" />
+            <ComboBox fx:id="cmbMarcas" layoutX="225.0" layoutY="270.0" prefHeight="25.0" prefWidth="161.0" promptText="Selecione a marca" />
+            <Label layoutX="41.0" layoutY="304.0" text="Observações" />
+            <Label layoutX="40.0" layoutY="253.0" text="Categorias" />
+            <Label layoutX="226.0" layoutY="253.0" text="Marcas" />
+            <Separator layoutX="425.0" layoutY="223.0" prefHeight="3.0" prefWidth="255.0" />
+            <Label layoutX="223.0" layoutY="101.0" text="Preço" />
+            <TextField fx:id="txtPreco" layoutX="222.0" layoutY="118.0" prefHeight="25.0" prefWidth="113.0" promptText="R$ 000.00" />
+            <ImageView fx:id="imgProduto" cacheHint="SPEED" fitHeight="173.0" fitWidth="206.0" layoutX="449.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="21.0" prefWidth="676.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblMensagem" alignment="CENTER_RIGHT" layoutX="324.0" layoutY="2.0" prefHeight="17.0" prefWidth="339.0" textAlignment="RIGHT" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Separator layoutY="-4.0" prefHeight="12.0" prefWidth="676.0" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

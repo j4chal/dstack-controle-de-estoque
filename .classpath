@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="images"/>
+	<classpathentry kind="src" path="properties"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-collections-3.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-digester-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/iText-2.1.7.js2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jasperreports-5.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jcommon-1.0.15.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/mariadb-java-client-1.1.7.jar"/>
+	<classpathentry kind="lib" path="lib/mybatis-3.2.8.jar"/>
+	<classpathentry kind="lib" path="lib/openjfx-dialogs-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-api-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-core-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/controlsfx-8.0.6_20.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

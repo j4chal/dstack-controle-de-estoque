@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="551.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="93.0" prefWidth="927.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="91.0" prefWidth="927.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="btnNovo" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnNovoAction" prefHeight="44.0" prefWidth="77.0" text="Novo" />
+                  <Button fx:id="btnEditar" alignment="CENTER_RIGHT" layoutX="111.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnEditarAction" prefHeight="44.0" prefWidth="76.0" text="Editar" />
+                  <Button fx:id="btnApagar" alignment="CENTER_RIGHT" layoutX="195.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnApagarAction" prefHeight="44.0" prefWidth="79.0" text="Apagar" />
+                  <Button fx:id="btnAtualizar" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="289.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnAtualizarAction" prefHeight="42.0" prefWidth="46.0" />
+                  <TextField fx:id="txtProcurar" layoutX="14.0" layoutY="58.0" prefHeight="29.0" prefWidth="325.0" promptText="Procurar" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <StackPane>
+         <children>
+            <TableView fx:id="tbvClientes" cacheHint="SPEED" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="tbcNome" prefWidth="154.0" text="Nome" />
+                  <TableColumn fx:id="tbcCpf" prefWidth="109.0" text="CPF" />
+                  <TableColumn fx:id="tbcRg" prefWidth="109.0" text="RG" />
+                  <TableColumn fx:id="tbcFantasia" prefWidth="144.0" text="Fantasia" />
+                  <TableColumn fx:id="tbcPessoa" prefWidth="127.0" text="Pessoa" />
+                  <TableColumn fx:id="tbcSexo" prefWidth="64.3333740234375" text="Sexo" />
+                  <TableColumn fx:id="tbcDataCadastro" maxWidth="1.7976931348623157E308" prefWidth="97.0" text="Data Cad." />
+                  <TableColumn fx:id="tbcEmail" prefWidth="136.3333740234375" text="Email" />
+                  <TableColumn fx:id="tbcDataNascimento" prefWidth="120.0" text="Data Nasc." />
+                  <TableColumn fx:id="tbcCep" prefWidth="114.333251953125" text="CEP" />
+                  <TableColumn fx:id="tbcEndereco" minWidth="0.0" prefWidth="129.6666259765625" text="Endereço" />
+                  <TableColumn fx:id="tbcNumero" prefWidth="97.0" text="Nº" />
+                  <TableColumn fx:id="tbcBairro" minWidth="0.0" prefWidth="100.666748046875" text="Bairro" />
+                  <TableColumn fx:id="tbcCidade" minWidth="0.0" prefWidth="97.0" text="Cidade" />
+                  <TableColumn fx:id="tbcUf" prefWidth="75.0" text="UF" />
+                  <TableColumn fx:id="tbcTelefone" prefWidth="75.0" text="Tel." />
+                  <TableColumn fx:id="tbcFax" prefWidth="75.0" text="FAX" />
+                  <TableColumn fx:id="tbcBanco" prefWidth="75.0" text="Banco" />
+                  <TableColumn fx:id="tbcAgencia" prefWidth="75.0" text="Agencia" />
+              </columns>
+            </TableView>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

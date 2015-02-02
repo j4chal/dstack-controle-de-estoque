@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="208.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Pane prefHeight="46.0" prefWidth="493.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="24.0" layoutY="3.0" text="Cadastro Marcas">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+            </Label>
+            <Separator layoutY="45.0" prefHeight="3.0" prefWidth="454.0" />
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="198.0" prefWidth="502.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtDescricao" layoutX="50.0" layoutY="51.0" prefHeight="31.0" prefWidth="291.0" promptText="Descrição">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="50.0" layoutY="26.0" text="Descrição">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnFechar" cancelButton="true" layoutX="93.0" layoutY="106.0" mnemonicParsing="false" onAction="#btnFecharAction" prefHeight="37.0" prefWidth="77.0" text="Fechar">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSalvar" defaultButton="true" layoutX="273.0" layoutY="106.0" mnemonicParsing="false" onAction="#btnSalvarAction" prefHeight="37.0" prefWidth="78.0" text="Salvar">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNovo" layoutX="375.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnNovoAction" text="Novo">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Separator layoutY="148.0" prefHeight="0.0" prefWidth="454.0" />
+            <Label fx:id="lblMensagem" layoutX="247.0" layoutY="148.0" prefHeight="16.0" prefWidth="201.0" textFill="RED">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

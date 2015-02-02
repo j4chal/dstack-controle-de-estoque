@@ -1,0 +1,9 @@
+#lblUsuarioMensagem {
+	-fx-text-fill: red;
+	-fx-font-weight: bold;
+}
+
+#lblSenhaMensagem {
+	-fx-text-fill: red;
+	-fx-font-weight: bold;
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox>
+         <children>
+            <MenuBar nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="CENTER" HBox.hgrow="ALWAYS">
+              <menus>
+                <Menu mnemonicParsing="false" text="Arquivo">
+                  <items>
+                        <MenuItem fx:id="mnuRelatorios" mnemonicParsing="false" onAction="#mnuRelatoriosAction" text="Relatórios">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="P" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="mnuAlterarSenha" mnemonicParsing="false" onAction="#mnuAlterarSenhaAction" text="Alterar Senha" />
+                        <MenuItem fx:id="mnuLogOff" mnemonicParsing="false" onAction="#mnuLogOffAction" text="Log off    (trocar usuario)" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                    <MenuItem fx:id="mnuSair" mnemonicParsing="false" onAction="#mnuSairAction" text="Sair">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="F4" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Cadastro">
+                    <items>
+                      <MenuItem fx:id="mnuCadastroUsuario" mnemonicParsing="false" onAction="#mnuCadastroUsuarioAction" text="Usuario">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT1" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="mnuCadastroCliente" mnemonicParsing="false" onAction="#mnuCadastroClienteAction" text="Clientes">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT2" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="mnuCadastroFornecedor" mnemonicParsing="false" onAction="#mnuCadastroFornecedorAction" text="Fornecedor">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT3" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="mnuCadastroProduto" mnemonicParsing="false" onAction="#mnuCadastroProdutoAction" text="Produto">
+                           <accelerator>
+                              <KeyCodeCombination alt="DOWN" code="DIGIT4" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Consulta">
+                  <items>
+                    <MenuItem fx:id="mnuConsultaUsuarios" mnemonicParsing="false" onAction="#mnuConsultaUsuariosAction" text="Usuarios">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="DIGIT1" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="mnuConsultaClientes" mnemonicParsing="false" onAction="#mnuConsultaClientesAction" text="Clientes">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="DIGIT2" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="mnuConsultaFornecedores" mnemonicParsing="false" onAction="#mnuConsultaFornecedoresAction" text="Fornecedores">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="DIGIT3" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="mnuConsultaProdutos" mnemonicParsing="false" onAction="#mnuConsultaProdutosAction" text="Produtos">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="DIGIT4" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ajuda">
+                  <items>
+                    <MenuItem fx:id="mnuSobre" mnemonicParsing="false" onAction="#mnuSobreAction" text="Sobre">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="F1" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <AnchorPane prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: #F0F0F0;">
+               <children>
+                  <Label fx:id="lblUsuarioLogged" layoutX="7.0" layoutY="4.0" textFill="#030303">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="24.0" prefHeight="1.0" prefWidth="221.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Pane prefWidth="97.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="btnProdutos" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="5.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnProdutosAction" prefHeight="76.0" prefWidth="86.0" text="Produtos">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnClientes" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="5.0" layoutY="91.0" mnemonicParsing="false" onAction="#btnClientesAction" prefHeight="76.0" prefWidth="86.0" text="Clientes">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnFornecedores" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="5.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnFornecedoresAction" prefHeight="76.0" prefWidth="86.0" text="Fornecedores">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnUsuarios" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="5.0" layoutY="256.0" mnemonicParsing="false" onAction="#btnUsuariosAction" prefHeight="76.0" prefWidth="86.0" text="Usuarios">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRelatorios" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnRelatoriosAction" prefHeight="76.0" prefWidth="86.0" text="Relatórios">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <StackPane fx:id="skpTelaPrincipal" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2147483647" GridPane.vgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="imgLogoCentro" fitHeight="464.0" fitWidth="669.0" pickOnBounds="true" preserveRatio="true" />
+         </children></StackPane>
+   </center>
+   <bottom>
+      <StackPane prefHeight="21.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <Separator prefWidth="200.0" StackPane.alignment="TOP_CENTER" />
+            <Label fx:id="lblDataAtual" StackPane.alignment="CENTER_LEFT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblHorarioAtual" StackPane.alignment="CENTER_RIGHT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </StackPane>
+   </bottom>
+</BorderPane>

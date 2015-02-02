@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="440.0" style="-fx-background-color: f5f5f5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="62.0" layoutY="9.0" text="Alterar Senha">
+         <font>
+            <Font name="Arial Italic" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutY="43.0" prefHeight="2.0" prefWidth="440.0" />
+      <Label layoutX="89.0" layoutY="70.0" text="Nova Senha: ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="123.0" text="Nova Senha(Confirmaçao):">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNovaSenha" layoutX="176.0" layoutY="67.0" prefHeight="25.0" prefWidth="231.0" />
+      <TextField fx:id="txtNovaSenhaConfirmacao" layoutX="176.0" layoutY="119.0" prefHeight="25.0" prefWidth="231.0" />
+      <Button fx:id="btnAlterarSenha" defaultButton="true" layoutX="299.0" layoutY="177.0" mnemonicParsing="false" onAction="#btnAlterarSenhaAction" prefHeight="35.0" prefWidth="108.0" text="Alterar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutY="166.0" prefHeight="3.0" prefWidth="440.0" />
+      <Label fx:id="lblMensagem" layoutX="69.0" layoutY="147.0" textFill="#e41e1e" />
+      <Button fx:id="btnCancelar" cancelButton="true" layoutX="155.0" layoutY="177.0" mnemonicParsing="false" onAction="#btnCancelarAction" prefHeight="35.0" prefWidth="108.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgAlterarSenha" fitHeight="35.0" fitWidth="42.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

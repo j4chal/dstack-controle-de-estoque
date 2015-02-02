@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="551.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane>
+         <children>
+            <TableView fx:id="tbvProdutos" cacheHint="SPEED" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="tbcDescricao" prefWidth="154.0" text="Descrição" />
+                  <TableColumn fx:id="tbcFornecedor" prefWidth="136.3333740234375" text="Fornecedor" />
+                  <TableColumn fx:id="tbcUnidadeMedida" prefWidth="52.0" text="UN" />
+                  <TableColumn fx:id="tbcEstoqueAtual" prefWidth="75.0" text="Estq. Atual" />
+                  <TableColumn fx:id="tbcPreco" prefWidth="86.0" text="Preço" />
+                  <TableColumn fx:id="tbcEstoqueMinimo" prefWidth="81.0" text="Estq. Min" />
+                  <TableColumn fx:id="tbcEstoqueMaximo" prefWidth="85.0" text="Estq. Max" />
+                  <TableColumn fx:id="tbcObservacoes" maxWidth="1.7976931348623157E308" prefWidth="119.0" text="Obs." />
+                  <TableColumn fx:id="tbcCategoria" prefWidth="126.0" text="Categoria" />
+                  <TableColumn fx:id="tbcMarca" prefWidth="120.0" text="Marca" />
+                  <TableColumn fx:id="tbcData" prefWidth="100.0" text="Data" />
+              </columns>
+            </TableView>
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="93.0" prefWidth="927.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="91.0" prefWidth="927.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="btnNovo" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnNovoAction" prefHeight="44.0" prefWidth="77.0" text="Novo" />
+                  <Button fx:id="btnEditar" alignment="CENTER_RIGHT" layoutX="111.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnEditarAction" prefHeight="44.0" prefWidth="76.0" text="Editar" />
+                  <Button fx:id="btnApagar" alignment="CENTER_RIGHT" layoutX="195.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnApagarAction" prefHeight="44.0" prefWidth="79.0" text="Apagar" />
+                  <Button fx:id="btnAtualizar" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="289.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnAtualizarAction" prefHeight="42.0" prefWidth="46.0" />
+                  <TextField fx:id="txtProcurar" layoutX="14.0" layoutY="58.0" prefHeight="29.0" prefWidth="325.0" promptText="Procurar" />
+                  <Button fx:id="btnCadastrarCategoria" layoutX="374.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnCadastrarCategoriaAction" prefHeight="25.0" prefWidth="134.0" text="Cadastrar Categoria">
+                     <font>
+                        <Font name="Trebuchet MS" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCadastrarMarca" layoutX="374.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnCadastrarMarcaAction" prefHeight="26.0" prefWidth="134.0" text="Cadastrar Marca">
+                     <font>
+                        <Font name="Trebuchet MS" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
